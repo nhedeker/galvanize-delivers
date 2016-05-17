@@ -1,0 +1,25 @@
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+i {
+  vertical-align: bottom;
+}
+
+header {
+  background: url(../img/hero.jpg);
+  background-size: cover;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+
+main {
+  margin: 30px 0;
+}
+
+.brand-logo {
+  margin-left: 10px;
+}
