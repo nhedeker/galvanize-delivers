@@ -24,7 +24,7 @@
              </a>
 
              <ul class="right hide-on-med-and-down">
-                <li><a href="order.html">Order Delivery</a></li>
+                <li class="active"><a href="order.html">Order Delivery</a></li>
              </ul>
 
              <ul class="side-nav" id="menu">
@@ -119,13 +119,13 @@
                   </div>
                </div>
             </div>
-            <div class="col s12 m5">
+            <div class="col s12 m5" id="orderSection">
                <h3>Order</h3>
-               <table>
+               <table class="striped fixed">
                   <thead>
                      <tr>
                         <th data-field="id">Name</th>
-                        <th data-field="#"></th>
+                        <th></th>
                         <th data-field="price">Item Price</th>
                      </tr>
                   </thead>
@@ -147,9 +147,41 @@
                      </tr> -->
                   </tbody>
                   <tfoot>
-                     
+                     <tr>
+                        <td></td>
+                        <td>Subtotal</td>
+                        <td>$0.00</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Tax</td>
+                        <td>$0.00</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>$0.00</td>
+                     </tr>
                   </tfoot>
                </table>
+               <div class="input-field">
+                  <i class="material-icons prefix small">account_circle</i>
+                  <input id="name" type="text" class="validate">
+                  <label for="name">Name</label>
+               </div>
+               <div class="input-field">
+                  <i class="material-icons prefix small">phone</i>
+                  <input id="phone" type="text" class="validate">
+                  <label for="phone">Phone</label>
+               </div>
+               <div class="input-field">
+                  <i class="material-icons prefix small">business</i>
+                  <textarea id="address" class="materialize-textarea"></textarea>
+                  <label for="address">Address</label>
+               </div>
+               <div class="col offset-s4">
+                  <a class="waves-effect waves-light btn-large" type="submit" name="placeOrder">PLACE ORDER</a>
+               </div>
             </div>
          </div>
       </div>
