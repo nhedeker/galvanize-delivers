@@ -46,13 +46,8 @@
 
      calculateTotal(price);
 
-     var $tax = $table.find('#tax');
-     console.log($tax);
-     //displays "context: document" on console
-
-
-     $table.find('#subtotal').text(`\$${subtotal.toFixed(2)}`);
-     $table.find('#tax').text(`\$${tax.toFixed(2)}`);
-     $table.find('#total').text(`\$${total.toFixed(2)}`);
+     $('#subtotal').text(`\$${subtotal.toFixed(2)}`);
+     $('#tax').text(`\$${tax.toFixed(2)}`);
+     $('#total').text(`\$${total.toFixed(2)}`);
   }
 })();
