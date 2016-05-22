@@ -2,7 +2,8 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title></title>
+      <title>Order</title>
+
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
@@ -12,106 +13,114 @@
       <link rel="stylesheet" href="css/order.css" media="screen">
    </head>
    <body>
-
       <!-- start of nav bar -->
-      <body>
-        <div class="navbar-fixed">
-          <nav>
-           <div class="nav-wrapper blue darken-3">
-             <a class="brand-logo grey-text text-lighten-4" href="index.html">Galvanize Delivers</a>
-             <a href="#" data-activates="menu" class="button-collapse">
-                <i class="material-icons">menu</i>
-             </a>
+      <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue darken-3">
+               <a href="index.html" class="brand-logo grey-text text-lighten-5">Galvanize Delivers</a>
 
-             <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="order.html">Order Delivery</a></li>
-             </ul>
+               <a href="" data-activates="menu" class="button-collapse">
+                  <i class="material-icons">menu</i>
+               </a>
 
-             <ul class="side-nav" id="menu">
-                <li><a href="order.html">Order Delivery</a></li>
-             </ul>
-           </div>
-          </nav>
-        </div>
-        <!-- end of nav bar -->
+               <ul id="nav-mobile" class="hide-on-med-and-down right grey-text text-lighten-5">
+                  <li class="active"><a href="order.html">Order Delivery</a></li>
+               </ul>
 
-        <div class="container">
-           <!-- for menu section -->
-           <div class="row">
-             <div class="col s12 m7">
-                <h3>Menu</h3>
-                <div class="row">
+               <ul class="side-nav" id="menu">
+                  <li><a href="order.html">Order Delivery</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!-- end of nav bar -->
+
+      <!-- for menu section -->
+      <div class="container">
+         <div class="row">
+            <div class="col s12 m7 l7">
+               <h3>Menu</h3>
+               <div class="row">
+
                   <div class="col s12 m12 l6">
-                     <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                           <img class="activator" src="img/burger.jpg">
+                     <div id="card1" class="card medium cards">
+                        <div class="card-image">
+                           <img src="img/burger.jpg">
                         </div>
                         <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Burger and Fries<i class="material-icons right">more_vert</i></span>
-                           <p>$8.99</p>
+                           <i class="material-icons right activator">more_vert</i>
+                           <span class="card-title grey-text text-darken-4 mealName">Burger and Fries
+                           </span>
+                           <p class="price">$8.99</p>
                         </div>
-                        <div class="card-action">
+                        <div class="card-action addOrder">
                            <a>ADD TO ORDER</a>
                         </div>
                         <div class="card-reveal">
-                           <span class="card-title grey-text text-darken-4">Ingriedants<i class="material-icons right">close</i></span>
+                           <span class="card-title grey-text text-darken-4">Ingriedants<i    class="material-icons right">close</i></span>
                            <p>hgshgkjsjhkskhjskjhs</p>
                            <p><strong>contains: </strong> gluten</p>
                         </div>
                      </div>
                   </div>
+
                   <div class="col s12 m12 l6">
-                     <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                           <img class="activator" src="img/pizza.jpg">
+                     <div id="card2" class="card medium cards">
+                        <div class="card-image">
+                           <img src="img/pizza.jpg">
                         </div>
                         <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Pizza<i class="material-icons right">more_vert</i></span>
-                           <p>$8.99</p>
+                           <i class="material-icons right activator">more_vert</i>
+                           <span class="card-title grey-text text-darken-4 mealName">Pizza</span>
+                           <p class="price">$8.99</p>
                         </div>
-                        <div class="card-action">
+                        <div class="card-action addOrder">
                            <a>ADD TO ORDER</a>
                         </div>
                         <div class="card-reveal">
-                           <span class="card-title grey-text text-darken-4">Ingriedants<i class="material-icons right">close</i></span>
+                           <span class="card-title grey-text text-darken-4">Ingriedants<i    class="material-icons right">close</i></span>
                            <p>hgshgkjsjhkskhjskjhs</p>
                            <p><strong>contains: </strong> gluten</p>
                         </div>
                      </div>
                   </div>
+
                   <div class="col s12 m12 l6">
-                     <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                           <img class="activator" src="img/ribs.jpg">
+                     <div id="card3" class="card medium cards">
+                        <div class="card-image">
+                           <img src="img/ribs.jpg">
                         </div>
                         <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Ribs<i class="material-icons right">more_vert</i></span>
-                           <p>$8.99</p>
+                           <i class="material-icons right activator">more_vert</i>
+                           <span class="card-title grey-text text-darken-4 mealName">Ribs</span>
+                           <p class="price">$8.99</p>
                         </div>
-                        <div class="card-action">
+                        <div class="card-action addOrder">
                            <a>ADD TO ORDER</a>
                         </div>
                         <div class="card-reveal">
-                           <span class="card-title grey-text text-darken-4">Ingriedants<i class="material-icons right">close</i></span>
+                           <span class="card-title grey-text text-darken-4">Ingriedants<i    class="material-icons right">close</i></span>
                            <p>hgshgkjsjhkskhjskjhs</p>
                            <p><strong>contains: </strong> gluten</p>
                         </div>
                      </div>
                   </div>
+
                   <div class="col s12 m12 l6">
-                     <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                           <img class="activator" src="img/ice_cream.jpg">
+                     <div id="card4" class="card medium cards">
+                        <div class="card-image">
+                           <img src="img/ice_cream.jpg">
                         </div>
                         <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Ice Cream<i class="material-icons right">more_vert</i></span>
-                           <p>$8.99</p>
+                           <i class="material-icons right activator">more_vert</i>
+                           <span class="card-title grey-text text-darken-4 mealName">Ice Cream</span>
+                           <p class="price">$8.99</p>
                         </div>
-                        <div class="card-action">
+                        <div class="card-action addOrder">
                            <a>ADD TO ORDER</a>
                         </div>
                         <div class="card-reveal">
-                           <span class="card-title grey-text text-darken-4">Ingriedants<i class="material-icons right">close</i></span>
+                           <span class="card-title grey-text text-darken-4">Ingriedants<i    class="material-icons right">close</i></span>
                            <p>hgshgkjsjhkskhjskjhs</p>
                            <p><strong>contains: </strong> gluten</p>
                         </div>
@@ -119,14 +128,15 @@
                   </div>
                </div>
             </div>
-            <div class="col s12 m5" id="orderSection">
+
+            <div class="col s12 m5 l5">
                <h3>Order</h3>
-               <table class="striped fixed">
+               <table class="striped">
                   <thead>
                      <tr>
-                        <th data-field="id">Name</th>
+                        <th data-field="id">Meal</th>
                         <th></th>
-                        <th data-field="price">Item Price</th>
+                        <th class="right-align" data-field="price">Item Price</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -149,18 +159,18 @@
                   <tfoot>
                      <tr>
                         <td></td>
-                        <td>Subtotal</td>
-                        <td>$0.00</td>
+                        <td class="right-align">Subtotal</td>
+                        <td id="subtotal" class="right-align">$0.00</td>
                      </tr>
                      <tr>
                         <td></td>
-                        <td>Tax</td>
-                        <td>$0.00</td>
+                        <td class="right-align">Tax</td>
+                        <td id="tax" class="right-align">$0.00</td>
                      </tr>
                      <tr>
                         <td></td>
-                        <td>Total</td>
-                        <td>$0.00</td>
+                        <td class="right-align">Total</td>
+                        <td id="total" class="right-align">$0.00</td>
                      </tr>
                   </tfoot>
                </table>
@@ -168,10 +178,12 @@
                   <i class="material-icons prefix small">account_circle</i>
                   <input id="name" type="text" class="validate">
                   <label for="name">Name</label>
+                  <!-- data.error="required" -->
+                  <!-- didn't show up on my label but maybe will on something else -->
                </div>
                <div class="input-field">
                   <i class="material-icons prefix small">phone</i>
-                  <input id="phone" type="text" class="validate">
+                  <input id="phone" type="tel" class="validate">
                   <label for="phone">Phone</label>
                </div>
                <div class="input-field">
@@ -180,39 +192,39 @@
                   <label for="address">Address</label>
                </div>
                <div class="col offset-s4">
-                  <a class="waves-effect waves-light btn-large" type="submit" name="placeOrder">PLACE ORDER</a>
+                  <a class="waves-effect waves-light btn-large" type="submit"    name="placeOrder">PLACE ORDER</a>
                </div>
             </div>
          </div>
       </div>
 
-        <!-- start of footer -->
-        <footer class="page-footer blue darken-2">
-          <div class="container">
-             <div class="row">
-                <div class="col l6 s12">
-                   <h5 class="grey-text text-lighten-4">Galvanize Delivers</h5>
-                   <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                   <ul>
-                      <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-                      <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-          <div class="footer-copyright blue darken-3">
-             <div class="container grey-text text-lighten-4">© 2014 Copyright Text</div>
-          </div>
-       </footer>
-       <!-- end of footer -->
+      <!-- start of footer -->
+      <footer class="page-footer blue darken-2">
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+                  <h5 class="grey-text text-lighten-4">Galvanize Delivers</h5>
+                  <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+               </div>
+               <div class="col l4 offset-l2 s12">
+                  <ul>
+                     <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                     <li><a class="grey-text text-lighten-3" href="order.html">Order   Delivery</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright blue darken-3">
+            <div class="container grey-text text-lighten-4">© 2014 Copyright Text</div>
+         </div>
+      </footer>
+      <!-- end of footer -->
 
 
 
-       <!-- javascript -->
-       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
-       <script type="text/javascript" src="js/materialize.js"></script>
-       <script>$(".button-collapse").sideNav();</script>
+      <!-- javascript -->
+      <script type="text/javascript"   src="https://code.jquery.com/jquery-2.1.1.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/order.js"></script>
    </body>
 </html>
