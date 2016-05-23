@@ -125,7 +125,7 @@
 
     // if no name send error
     var customerName = document.getElementById('name').value;
-
+    // for some reason regex isn't working on '' strings
     if (/^\s+?/.test(customerName) || customerName === '') {
       Materialize.toast('Please enter your name', 5000);
 
