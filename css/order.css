@@ -1,4 +1,32 @@
-.toast{
-  /*color: pink;
-  background-color: blue;*/
+/*#ec407a is color of pink lighten-1*/
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ec407a;
+  box-shadow: 0 1px 0 0 #ec407a;
+}
+
+.input-field input[type=tel]:focus + label {
+  color: #ec407a;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #ec407a;
+}
+
+.input-field input[type=tel]:focus {
+  border-bottom: 1px solid #ec407a;
+  box-shadow: 0 1px 0 0 #ec407a;
+}
+
+.input-field .prefix.active {
+  color: #ec407a;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ec407a;
+  box-shadow: 0 1px 0 0 #ec407a;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #ec407a;
 }
