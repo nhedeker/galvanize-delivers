@@ -6,7 +6,6 @@
   var total = 0.00;
   var subtotal = 0.00;
   var tax = 0.00;
-  var $table = $('table');
   var hasItems = false;
 
   $('#placeOrder').click(function(event){
@@ -39,7 +38,7 @@
      var price = $card.find('.price').text();
      var mealName = $card.find('.mealName:not(i)').text();
 
-     var $tbody = $table.children('tbody');
+     var $tbody = $('tbody');
      $tbody.append('<tr>');
      $tbody.find('tr:last-of-type').append('<td>');
      $tbody.find('td:last-of-type').text(mealName);
